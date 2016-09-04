@@ -1,7 +1,7 @@
 from evennia import Command as BaseCommand
 from evennia import default_cmds
 from evennia.utils.ansi import strip_ansi
-
+from utils.message import syntax_error
 
 class cmdNamecolor(default_cmds.MuxCommand):
     """
@@ -25,7 +25,7 @@ class cmdNamecolor(default_cmds.MuxCommand):
         
         #if they use an =, we know something is wrong
         if self.rhs:
-            caller.msg("Syntax error. Type 'help namecolor' for help.")
+            syntax_error(caller, self.key)
             return
             
         #if the arg is "delete", we just delete their name colors and ignore everything else
