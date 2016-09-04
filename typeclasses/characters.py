@@ -30,22 +30,22 @@ class Character(DefaultCharacter):
 
     """
     def at_object_creation(self):
-		"This is called when object is first created, only."
-		self.db.weight = "|500UNSET"
-		self.db.race = "|500RACE UNSET"
-		self.db.gender = "|500GENDER UNSET|n"
-		self.db.age = "|500UNSET"
-		self.db.hair = "|500UNSET"
-		self.db.height = "|500UNSET"
-		self.db.coat = "|500UNSET"
-		self.db.bodyshape = "|500UNSET"
-		self.db.occupation = "|500UNSET"
-		self.db.eyes = "|500UNSET"
-		self.db.nummorphs = 0
-		self.db.morphs = []
-		self.db.requestsmade = []
-		self.db.requestsclosed = []
-		self.db.fetlistf = []
-		self.db.fetlisty = []
-		self.db.fetlistm = []
-		self.db.buildingappsopen = []
+        "This is called when object is first created, only."
+        self.db.weight = "|500UNSET"
+        self.db.race = "|500RACE UNSET"
+        self.db.gender = "|500GENDER UNSET|n"
+        self.db.age = "|500UNSET"
+        self.db.hair = "|500UNSET"
+        self.db.height = "|500UNSET"
+        self.db.coat = "|500UNSET"
+        self.db.bodyshape = "|500UNSET"
+        self.db.occupation = "|500UNSET"
+        self.db.eyes = "|500UNSET"
+        self.db.nummorphs = 0
+        self.db.morphs = []
+        self.db.requestsmade = []
+        self.db.requestsclosed = []
+        self.db.fetlistf = []
+        self.db.fetlisty = []
+        self.db.fetlistm = []
+        self.db.buildingappsopen = []
