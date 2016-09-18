@@ -28,6 +28,9 @@ from commands import buildingapp
 from commands import goaside
 from commands import sooc
 from commands import namecolor
+from commands import (
+    override_look,
+)
 
 class CharacterCmdSet(default_cmds.CharacterCmdSet):
     """
@@ -58,6 +61,7 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         self.add(goaside.cmdGoAside)
         self.add(sooc.cmdSayOOC)
         self.add(namecolor.cmdNamecolor)
+        self.add(override_look.CmdLook)
         #
         # any commands you add below will overload the default ones.
         #
